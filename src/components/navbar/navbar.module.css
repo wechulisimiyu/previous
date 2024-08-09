@@ -1,0 +1,45 @@
+.container {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logout {
+    padding: 5px;
+    border: none;
+    background-color: #53c28b;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    position: relative; 
+}
+
+.logout:hover .popup {
+    display: block; 
+}
+
+.popup {
+    display: none; /* Hide the popup by default */
+    position: absolute;
+    bottom: 100%; /* Position the popup above the button */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    z-index: 1;
+}
