@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className={styles.container}>
             <Link href="/" className={styles.logo}>Previous</Link>
             <div className={styles.links}>
-            {/* <DarkModeToggle /> */} 
+            <DarkModeToggle /> 
                 {links.map((link) => (
                     <Link key={link.id} href={link.url} className={styles.link}>
                         {link.title}
