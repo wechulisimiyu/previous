@@ -12,7 +12,6 @@ const Dashboard = () => {
 
   const router = useRouter();
   
-  //NEW WAY TO FETCH DATA
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
   const { data, mutate, error, isLoading } = useSWR(
