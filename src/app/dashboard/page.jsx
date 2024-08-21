@@ -10,6 +10,8 @@ const Dashboard = () => {
 
   const session = useSession();
 
+  // console.log(session);
+
   const router = useRouter();
   
   const fetcher = (...args) => fetch(...args).then((res) => res.json());
